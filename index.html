@@ -9,8 +9,8 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtYCyQJsEIfbzcR6cDEBctXemChI67HKw&callback=initMap" type="text/javascript"></script>
 
     <script language="javascript">
-      window.onload = function() {
-  //      window.S2Map.initialize();
+      window.initMap = function() {
+        window.googleMapLoaded = true;
       };
     </script>
     <div id="credits">Created by Ravi Kanodia. Source available at: <a id="source-link" href="https://github.com/ravikanodia/s2map">github.com/ravikanodia/s2map</a></div>
