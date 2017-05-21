@@ -1,6 +1,3 @@
-
-
-
 var S2Map = {};
 S2Map.init = function() {
   var florida = {lat: 29, lng: -82};
@@ -14,4 +11,9 @@ S2Map.init = function() {
   });
 };
 
-window.initMap = S2Map.init;
+window.S2Map = S2Map;
+window.S2Geometry = require('s2-geometry');
+
+if (window.googleMapLoaded) {
+  window.S2Map.init();
+}

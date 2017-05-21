@@ -5,12 +5,16 @@
     <link rel="stylesheet" href="s2map.css">
   </head>
   <body>
-  <script data-main="js/main.js" src="js/require.js"></script>
+  <script src="app.js"></script>
+  <script src="sample.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtYCyQJsEIfbzcR6cDEBctXemChI67HKw&callback=initMap" type="text/javascript"></script>
 
     <script language="javascript">
       window.initMap = function() {
         window.googleMapLoaded = true;
+        if (window.S2Map) {
+          window.S2Map.init();
+        };
       };
     </script>
     <div id="credits">Created by Ravi Kanodia. Source available at: <a id="source-link" href="https://github.com/ravikanodia/s2map">github.com/ravikanodia/s2map</a></div>
