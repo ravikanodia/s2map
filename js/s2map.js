@@ -73,7 +73,7 @@ S2Map.init = function() {
         dangerousEvents,
         function(message) {
           var key = S2Map.getKeyForMessage(message);
-          var combinedKey = S2Map.getKeyForMessage(message).key
+          var combinedKey = S2Map.getKeyForMessage(message)
             .slice(0, 20) + "10";
           if (combinedRegions[combinedKey]) {
             return;
