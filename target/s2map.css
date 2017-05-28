@@ -2,3 +2,38 @@
   height: 800px;
   width: 100%;
 }
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #7aa7c2;
+  font-family: Helvetica;
+}
+
+#credits {
+  margin-top: 15px;
+  text-align: center;
+  color: #eee;
+}
+
+#source-link {
+  color: #bef;
+}
+
+#controls {
+  margin: 30px auto 20px auto;
+  display: table;
+}
+
+.marker-toggle {
+  height: 40px;
+  border: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.toggle-button:focus {
+  box-shadow: inset 0 0 0 1px #73c6eb, 0 0 6px 4px #5c8bf8;
+}
+
